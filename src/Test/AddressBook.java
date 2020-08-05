@@ -4,8 +4,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 public class AddressBook {
@@ -46,16 +44,16 @@ public class AddressBook {
 		}
 	}
 
-	private void sort_byName() {
-		Collections.sort(person_list, new Comparator<Set_Person>() {
+	// private void sort_byName() {
+	// 	Collections.sort(person_list, new Comparator<Set_Person>() {
 
-			@Override
-			public int compare(final Set_Person o1, final Set_Person o2) {
+	// 		@Override
+	// 		public int compare(final Set_Person o1, final Set_Person o2) {
 
-				return 0;
-			}
-		});
-	}
+	// 			return 0;
+	// 		}
+	// 	});
+	// }
 
 	void remove_byEntry() throws ArrayIndexOutOfBoundsException {
 		System.out.println("enter the entry no which you want to delete :-");
@@ -64,10 +62,10 @@ public class AddressBook {
 		person_list.remove(index);
 	}
 
-	void update_byEntry() {
-		final int index = 1;
-		// person_list.set(index, );
-	}
+	// void update_byEntry() {
+	// 	int index = 1;
+	// 	// person_list.set(index);
+	// }
 
 	void getAddressFromUser() {
 		System.out.println("Enter First Name :-");
