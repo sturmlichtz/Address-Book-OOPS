@@ -87,7 +87,7 @@ public class AddressBook {
 			case 0:
 				break;
 			default:
-
+				System.out.println("Enter correct choice");
 				break;
 		}
 	}
